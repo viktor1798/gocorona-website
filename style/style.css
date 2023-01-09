@@ -13,6 +13,8 @@
 
 a{
     text-decoration: none;
+    margin: 0;
+   
 }
 
 ol,
@@ -46,7 +48,7 @@ body{
 body{
     font-family: Rubik;
     font-size: 15px;
-    color: gray; 
+    
 }
 
 /* ================================================= */
@@ -71,8 +73,64 @@ body{
 
 
 .header {
-}
+    margin: 37px 0;
 
+}
+.header__container {
+    display: flex;
+    justify-content: space-around;
+}
+.header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: 700px;
+    color: #000 ;
+    line-height: 21px;
+
+}
+.span_red {
+    color:#EC5863;
+}
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__item {
+    margin-right: 40px;
+}
+.item__href-nav{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700px;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000;
+}
+.header__button {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.button {
+    padding: 14px 30px;
+    border-radius: 5px;
+
+    font-family: 'Raleway';
+    font-style: normal; 
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 12px;
+    color: #fff;
+
+    text-transform: uppercase;
+}
+.button_blue {
+    background-color: #4285F4;
+}
 
 /*============== main ========== */
 
