@@ -1,0 +1,90 @@
+/*  ========== Обнуляющие стили ========== */
+
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+ol,
+ul,
+li{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body{
+    height: 100%;
+    line-height: 1;
+}
+
+
+/* основные правила для всей css страницы */
+
+
+body{
+    font-family: Rubik;
+    font-size: 15px;
+    color: gray; 
+}
+
+/* ================================================= */
+.wrapper{
+    /* не разрешает появлятся нижнему скроллу */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height:100%;
+
+}
+
+/* для всех классов, у которых будет добавлен __container, будет примиино правило */
+[class*=__container]{
+    max-width: 1057px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* ================header ================*/
+
+
+.header {
+}
+
+
+/*============== main ========== */
+
+
+.main { 
+    /* опускает подвал сайта в подвал сайта */
+    flex: 1 1 auto;
+}
+
+
+/*============== footer========== */
+
+
+.footer {
+}
