@@ -4,39 +4,41 @@
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
     box-sizing: border-box;
 
 }
 
-a{
+a {
     text-decoration: none;
     margin: 0;
-   
+
 }
 
 ol,
 ul,
-li{
+li {
     list-style: none;
 }
 
-img{
+img {
     vertical-align: top;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     font-weight: inherit;
     font-size: inherit;
 }
+
 html,
-body{
+body {
     height: 100%;
     line-height: 1;
 }
@@ -45,24 +47,24 @@ body{
 /* основные правила для всей css страницы */
 
 
-body{
+body {
     font-family: Rubik;
     font-size: 15px;
-    
+
 }
 
 /* ================================================= */
-.wrapper{
+.wrapper {
     /* не разрешает появлятся нижнему скроллу */
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    min-height:100%;
+    min-height: 100%;
 
 }
 
 /* для всех классов, у которых будет добавлен __container, будет примиино правило */
-[class*=__container]{
+[class*=__container] {
     max-width: 1057px;
     width: 100%;
     margin: 0 auto;
@@ -71,38 +73,57 @@ body{
 
 /* ================header ================*/
 
-
-.header {
-    margin: 37px 0;
-
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 50;
 }
+
 .header__container {
     display: flex;
-    justify-content: space-around;
+    min-height: 114px;
+    align-items: center;
 }
+
+
 .header__logo {
     display: flex;
     justify-content: center;
     align-items: center;
 
     font-size: 18px;
-    font-weight: 700px;
-    color: #000 ;
+    font-weight: 700;
+    color: #000;
     line-height: 21px;
 
 }
+
 .span_red {
-    color:#EC5863;
+    color: #EC5863;
 }
-.header__nav {
+
+
+.header__menu {
+    flex: 1 1 auto;
+}
+/* модификатор, позволяющий разместить меню в нужное положение */
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+.menu__list {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.nav__item {
+.menu__item {
     margin-right: 40px;
 }
-.item__href-nav{
+
+.menu__link {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700px;
@@ -110,32 +131,45 @@ body{
     line-height: 12px;
     color: #000;
 }
+
+
 .header__button {
- display: flex;
- justify-content: center;
- align-items: center;
+    display: flex;
+    justify-content: end;
+    flex: 0 0 252px;
+    
 }
+
 .button {
     padding: 14px 30px;
     border-radius: 5px;
+    display: inline-block;
 
     font-family: 'Raleway';
-    font-style: normal; 
+    font-style: normal;
     font-weight: 800;
     font-size: 10px;
     line-height: 12px;
-    color: #fff;
+    color: #FCFDFE;
+    letter-spacing: 0.7px;
 
     text-transform: uppercase;
+
+    
+    
 }
 .button_blue {
     background-color: #4285F4;
+    transition: background  0.5s linear;
 }
 
+.button_blue:hover{
+    background-color: #71a2f1;
+}
 /*============== main ========== */
 
 
-.main { 
+.main {
     /* опускает подвал сайта в подвал сайта */
     flex: 1 1 auto;
 }
@@ -144,5 +178,4 @@ body{
 /*============== footer========== */
 
 
-.footer {
-}
+.footer {}
