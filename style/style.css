@@ -65,12 +65,38 @@ body {
 
 /* для всех классов, у которых будет добавлен __container, будет примиино правило */
 [class*=__container] {
-    max-width: 1057px;
+    max-width: 1097px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
+/* адаптив */
+@media (max-width:1087px) {
+    [class*=__container] {
+        max-width: 970px;
+    }
+}
 
+@media (max-width:950px) {
+    [class*=__container] {
+        max-width: 750px;
+    }
+    .header__button{
+        flex: 0 0 150px;
+         
+    }
+    .menu{
+        padding-right: 20px;
+    }
+
+}
+
+@media (max-width:766px) {
+    [class*=__container] {
+        max-width:none;
+    }
+}
 /* ================header ================*/
 
 .header{
@@ -137,8 +163,9 @@ body {
     display: flex;
     justify-content: end;
     flex: 0 0 252px;
-    
+     
 }
+
 
 .button {
     padding: 14px 30px;
@@ -165,6 +192,20 @@ body {
 
 .button_blue:hover{
     background-color: #71a2f1;
+}
+
+/* перемещаем сюда медия запросы, из за веса селекторов */
+@media (max-width:950px) {
+    .header__container{
+        min-height: 95px;
+    }
+    .header__button{
+        flex: 0 0 150px;
+    
+    }
+    .menu{
+        padding-right: 20px;
+    }
 }
 /*============== main ========== */
 
