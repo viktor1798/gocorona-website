@@ -242,6 +242,9 @@ body {
     background-color: #4285F4;
     transition: background 0.5s linear;
 }
+.button_pink{
+    background-color: #EC5863;
+}
 
 .button_blue:hover {
     background-color: #71a2f1;
@@ -332,6 +335,87 @@ body {
     /* опускает подвал сайта в подвал сайта */
     flex: 1 1 auto;
 }
+
+/*=================== health========================= */
+.health {
+    margin-left: 18px;
+}
+.health__container {
+    display: flex;
+    
+}
+.health__content {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.content__description-health {
+    flex: 1 1 auto;
+   
+}
+.description-health__h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 126%;
+
+    margin-bottom: 25px;
+}
+.span_blue {
+    color:#4285F4 ;
+}
+.description-health__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 138.5%;
+    color:  #616161;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+
+    max-width: 375px;
+    width: 100%;
+
+    margin-bottom: 25px;
+;
+}
+.content__get-start-watch {
+    display: flex;
+    
+}
+.get-start-watch__video-icon {
+}
+.get-start-watch__description {
+    padding: 6px 12px;
+}
+.description__text {
+    
+}
+.text__stay {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 126%;
+
+    color: #B0B0B0;
+
+   
+}
+.text__watch {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 126%;
+
+    letter-spacing: 0.165em;
+    text-transform: uppercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+}
+.health__img {
+}
+
 
 
 /*============== footer========== */
