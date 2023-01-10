@@ -11,19 +11,25 @@
 </head>
 <body>
      <div class="wrapper">
-        <header class="header">
+        <header id="open"   class="header">
             <div class="header__container">
-                <a href="" class="header__logo"><img src="image/logo.svg" alt="">Go<span class="logo__span span_red">Corona</span></a>
+                <a href="" class="header__logo"><img class="" src="image/logo.svg" alt=""><span class="no-text">Go<span class="logo__span span_red">Corona</span></span></a>
+                
                 <nav class="header__menu menu">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">FEATURES</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">SUPPORT</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">CONTACT US</a></li>
-                    </ul>
+                    <nav id="close" class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">FEATURES</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">SUPPORT</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">CONTACT US</a></li>
+                        </ul>
+                    </nav>
                 </nav>
+                
                 <div class="header__button">
                     <a href="#" class="button button_blue">download</a>
+                    <a href="#open" class="icon-menu"><span class="menu__burger-span"></span></a>
+                    <a href="#close" class="close-icon-menu"><span ></span></a>
                 </div>
             </div>
         </header>
