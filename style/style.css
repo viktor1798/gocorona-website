@@ -112,7 +112,7 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 50;
+    z-index: 2;
 }
 .header__container {
     display: flex;
@@ -447,6 +447,12 @@ body {
     .health__content{
         justify-content:left;
         align-items: flex-start;
+        /* background: url("../image/health/image.svg") ;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        filter: alpha(opacity=50); */
+        
         
     }
     .content__get-start-watch{
@@ -485,7 +491,7 @@ body {
     padding: 56px 0px 15px 0px;
     border-radius: 16px;
     position: relative;
-    z-index: 4;
+    z-index: 2;
 }
 
 .content__description-stay-safe {
@@ -517,8 +523,7 @@ body {
     }
 }
 
-/* стилизация заднего декора */
-
+/* стилизация заднего декора img. Первый способ, Делаем блок шире, и распределямем по местам блока*/
 
 .media__stay-safe-item{
     position: absolute;
@@ -546,6 +551,149 @@ body {
     height: 77px;
     z-index: 0;
 }
+
+
+/* ===================talk-to-experts ===============*/
+
+.talk-to-expert {
+    background-color: #fafbfd;
+    padding: 103px 0 116px 0;
+    
+}
+.talk-to-expert__container {
+}
+.talk-to-expert__statistics {
+}
+.statistics-experts {
+    max-width: 654px;
+    margin: 0 auto;
+  
+
+    position: relative;
+
+    margin-bottom: 120px;
+   
+}
+.statistics-experts__body {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+    
+    position: relative;
+    z-index: 2;
+}
+.statistics-experts__decor {
+    position: absolute;
+    background-color: #EC5863;
+
+    
+}
+.statistics-experts__decor_item1 {
+    width: 65.75px;
+    height: 65.75px;
+    border-radius:16px;
+
+    transform: rotate(-30deg);
+    bottom: -31px;
+    left: -31px;
+}
+.statistics-experts__decor_item2 {
+    width: 96.96px;
+    height: 96.96px;
+    border-radius:30px;
+
+    transform: rotate(105deg);
+    top: -40px;
+    left: 209px;
+
+}
+.statistics-experts__decor_item3 {
+    width: 127.47px;
+    height: 127.47px;
+    border-radius:30px;
+
+    transform: rotate(-30deg);
+
+    top: -24px;
+    right: -75px;
+}
+ 
+.body-statistics-experts {
+    padding: 20px 80px;
+    display: flex;
+    align-items: center;
+}
+.body-statistics-experts__item{
+    flex: 1 1 33%;
+    align-items: center;
+
+}
+.body-statistics-experts__value {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #EC5863;
+
+    letter-spacing: 0.14em;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+}
+.body-statistics-experts__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.37em;
+    text-transform: uppercase;
+
+}
+
+
+.talk-to-expert__content{
+    display: flex;
+   align-items: center;
+}
+.content__description-talk-to-expert {
+    flex: 0 1 50%;
+    padding: 0 20px 0 0;
+}
+.description-talk-to-expert__h2 {
+}
+.title__text {
+}
+.span_blue {
+}
+.description-talk-to-expert__text {
+      max-width: 400px;
+      width: 100%;
+}
+.text__item {
+}
+.button {
+}
+.button_pink {
+}
+.talk-to-expert__media-video{
+    flex: 0 1 50%;
+    padding: 0 0px 30% 0px;
+    position: relative;
+    
+}
+
+.talk-to-expert__media-video iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
 
 /*============== footer========== */
 
